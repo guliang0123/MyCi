@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //定义路由
 $route['test']='test/test/index';// test目录/test类/index方法
+$route['page']='test/test/page';
