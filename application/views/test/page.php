@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php endforeach;?>
 </table>
 <div id="pagelist">
-    <ul><?php echo $this->pagination->create_links();?>
+    <ul><?php echo $pagestr;?>
     </ul>
 </div>
 </body>
