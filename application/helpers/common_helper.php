@@ -15,6 +15,9 @@ if(!function_exists('dd')){
 
     }
 }
+/**
+ * 数据分页样式配置
+ */
 if(!function_exists('page_config')){
     function page_config($number,$per_nums=10){
         $config['total_rows'] = $number;  //配置记录总条数

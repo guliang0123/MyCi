@@ -16,7 +16,10 @@ class Test extends CI_Controller
         $this->load->model('user','user');    //加载user模型，赋为变量user
         $this->load->helper('url');       //系统的帮助类
     }
-    //数据分页
+
+    /**
+     * @description 数据分页
+     */
     public function page()
     {
         //1.总记录数
@@ -32,6 +35,9 @@ class Test extends CI_Controller
         $this->load->view('test/page',$tab);     //调页面  传数据
     }
 
+    /**
+     * @description 首页
+     */
     public function index(){
        $this->load->model('user');
        $list['data'] = $this->user->getuserlist();//注意要分配变量
